@@ -2,24 +2,24 @@ const container = document.querySelector('.container');
 const text = document.querySelector('#text');
 
 const totalTime = 7500;
-const breathTime = (totalTime/5) * 2;
+const breathTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 breathAnimation()
 
-function breathAnimation(){
-    text.innerHTML = 'Inhale!'
-    container.className = 'container grow'
+function breathAnimation() {
+  text.innerHTML = 'Breath in!'
+  container.className = 'container grow'
 
-    setTimeout(() =>{
-        text.innerText = 'Hold'
+  setTimeout(() => {
+    text.innerText = 'Hold'
 
-        setTimeout(() => {
-          text.innerText = 'Exhale!'
-          container.className = 'container shrink'
-        }, holdTime)
+    setTimeout(() => {
+      text.innerText = 'Breath out!'
+      container.className = 'container shrink'
+    }, holdTime)
 
-    }, breathTime)
+  }, breathTime)
 }
 
 setInterval(breathAnimation, totalTime)
