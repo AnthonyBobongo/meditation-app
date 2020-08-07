@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
   background: url(img/ocean.jpg) no-repeat center/cover;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -16,6 +16,11 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 50px;
+}
 .container {
   display: flex;
   align-items: center;
@@ -28,13 +33,7 @@ body {
 }
 
 .gradient-circle {
-  background: conic-gradient(#55b7a4 20%,
-      #4ca493 40%,
-      #fff 40%,
-      #fff 60%,
-      #336d62 60%,
-      #2a5b52 100%,
-    );
+  background: #55b7a4;
   height: 320px;
   width: 320px;
   position: absolute;
@@ -42,7 +41,6 @@ body {
   left: -10px;
   z-index: -2;
   border-radius: 50%;
-
 }
 
 .circle {
@@ -85,38 +83,29 @@ body {
 @keyframes rotate {
   from {
     transform: rotate (0deg);
-
   }
 
   to {
-
     transform: rotate(360deg);
-
   }
 }
 
 @keyframes grow {
   from {
     transform: scale(1);
-
   }
 
   to {
-
     transform: scale(1.2);
-
   }
 }
 
 @keyframes shrink {
   from {
     transform: scale(1.2);
-
   }
 
   to {
-
     transform: scale(1);
-
   }
 }
